@@ -83,7 +83,7 @@ function App() {
             </div>
             <div className="card-body">
               <div className="form-container">
-                <Form modeHandler={modeHandler} submitHandler={submitHandler} todo={todo} todoHandler={todoHandler} setModeHandler={setModeHandler} />
+                <Form modeHandler={modeHandler} submitHandler={submitHandler} todo={todo} todoHandler={todoHandler} setModeHandler={setModeHandler} setTodo={setTodo} />
               </div>
             </div>
           </div>
