@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import './custom.css'
 import Form from './Components/Todos/Form'
 import ListTodos from './Components/Todos/ListTodos'
@@ -47,7 +46,13 @@ function App() {
   }
 
   useEffect(() => {
-    FetchTodos(setTodos, setLoading, setError)
+    let mounted = true
+    if(mounted){
+      FetchTodos(setTodos, setLoading, setError)
+    }
+    return ()=>{
+      mounted = false
+    }
   }, [loading])
 
   if (loading) return <h1>Loading...</h1>
@@ -78,7 +83,7 @@ function App() {
             </div>
             <div className="card-body">
               <div className="form-container">
-                <Form modeHandler={modeHandler} submitHandler={submitHandler} todo={todo} todoHandler={todoHandler} />
+                <Form modeHandler={modeHandler} submitHandler={submitHandler} todo={todo} todoHandler={todoHandler} setModeHandler={setModeHandler} />
               </div>
             </div>
           </div>

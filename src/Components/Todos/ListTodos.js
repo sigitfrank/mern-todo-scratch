@@ -1,6 +1,5 @@
 import React from 'react'
 import {MdDeleteForever, MdEdit} from 'react-icons/md'
-import {MODE_HANDLER_EDIT} from '../../API/constants'
 function ListTodos({todos, deleteTodo, editTodo, toggleTodoHandler}) {
     return (
         <>
