@@ -1,0 +1,68 @@
+.card {
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bolder;
+    color: #557be2;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form-check {
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+    color: rgb(100, 100, 100);
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+.form-container {
+    margin-top: 0.5rem;
+}
+
+input#todo {
+    border: 0;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+input#todo:focus {
+    box-shadow: 0 2px 2px -2px rgb(60, 94, 206);
+}
+
+.single-todo {
+    display: flex;
+    position: relative;
+}
+
+.delete-todo,
+.edit-todo {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.delete-todo {
+    color: rgba(255, 42, 42, 0.79);
+    top: 0.8rem;
+    font-size: 1.7rem;
+}
+
+.edit-todo {
+    top: 1rem;
+    right: 1.7rem;
+    font-size: 1.5rem;
+    color: rgb(64, 104, 150, 0.79);
+}
+
+button {
+    margin-top: 1rem;
+}
