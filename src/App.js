@@ -36,6 +36,8 @@ function App() {
   }
 
   const editTodo = (event) => {
+    console.log(event.target)
+    alert(event.target.dataset.id)
     EditTodo(event, setModeHandler, setIdTodo, setTodo)
   }
 
